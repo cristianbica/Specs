@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.source_files   = 'Analytics.framework/Versions/A/Headers/*.h'
   s.preserve_paths = 'Analytics.framework/*'
 
-  s.frameworks     = 'Foundation', 'CoreData', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'QuartzCore', 'CFNetwork', 'AdSupport', 'Security'
-  s.libraries      = 'sqlite3.0', 'z', 'Analytics'
+  s.frameworks     = 'Foundation', 'CoreData', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'QuartzCore', 'CFNetwork', 'AdSupport', 'Security', 'Analytics'
+  s.libraries      = 'sqlite3.0', 'z'
 
   s.xcconfig       = { 'OTHER_LDFLAGS' => '-ObjC', 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/Analytics/Analytics.framework"' }
 
