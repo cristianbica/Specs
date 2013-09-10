@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author              = { "Segment.io" => "friends@segment.io" }
 
   s.source              = { :http => "https://s3.amazonaws.com/segmentio/releases/ios/Analytics-0.6.2.zip", :flatten => true }
-  s.source_files        = 'Analytics.framework/Versions/A/Headers/*.h'
+  s.source_files        = 'Analytics.framework/**/*.h'
   s.preserve_paths      = 'Analytics.framework/*'
 
   s.frameworks          = 'Foundation', 'CoreData', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'QuartzCore', 'CFNetwork', 'AdSupport', 'Security'
